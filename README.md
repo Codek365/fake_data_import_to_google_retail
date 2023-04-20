@@ -1,6 +1,6 @@
 # fake_data_import_to_google_retail
 
-#####Run php servives: 
+##### Run php servives: 
 
 ```
 sudo chmod 755 sv
