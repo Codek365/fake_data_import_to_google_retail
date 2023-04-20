@@ -50,7 +50,7 @@ function generateVisiterID()
 
 function generateCategories($pjID)
 {
-	if ($pjID == 'yagi') {
+	if ($pjID == 'pj-1') {
 		$categories = ["Jacket","Shirt","women","Default Category","Pant"];
 	} else {
 		$categories = ["Apparel","Accessories","Office","Default Category"];
@@ -62,7 +62,7 @@ function generateCategories($pjID)
 
 function generateProducts($pjID)
 {
-	if ($pjID == 'yagi') {
+	if ($pjID == 'pj-1') {
 		$products = [1,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
 	} else {
 		$products = ["GGCOAAPR155410","GGCOGADC100813","GGCOGADC100814","GGCOGADC100815","GGCOGADC100816","GGCOGADC100817","GGCOGAED156912","GGCOGAEJ153715","GGCOGAEJ153717","GGCOGAEJ153718","GGCOGALB153913","GGCOGALC100713","GGCOGAXT154229","GGCOGAYC154115","GGCOGCBA161199","GGCOGCBA164499","GGCOGOAC101259","GGOEAAEC172013","GGOEAAEC172017","GGOEAAEH129616","GGOEAAEH129617","GGOEAAEL130813","GGOEAAEL130815","GGOEAAEL130818","GGOEAAKQ137410","GGOEAAWL130145","GGOEAAWL130147","GGOEAAXL129928","GGOEAAXQ129830","GGOEAAYH130212","GGOEAAYL130313","GGOEAAYL130315","GGOEACBA116699","GGOEAFBA115599","GGOEAFDH105799","GGOEAFKQ130599","GGOEAHPL130910","GGOECAEB163513","GGOECAEB163614","GGOECAEB165413","GGOECAEB165414","GGOECAEB165513","GGOECOLJ164299","GGOEGAAB118913","GGOEGAAB118914","GGOEGAAB118916","GGOEGAAH134316","GGOEGAAH136915","GGOEGAAQ117715","GGOEGAAQ117716","GGOEGAAR134513","GGOEGABB099199","GGOEGACH161516","GGOEGACH161517","GGOEGACH161518"];
@@ -192,11 +192,11 @@ if (file_exists($file))
 							<label>Project ID:</label>
 							<select class="custom-select" name="pjID" id="pjID">
 								<option value="yagi" 
-								<?= isset($_GET['pjID']) && $_GET['pjID'] =="yagi"? "selected" : "" ?>
-								>yagi</option>
+								<?= isset($_GET['pjID']) && $_GET['pjID'] =="pj-1"? "selected" : "" ?>
+								>pj-1</option>
 								<option value="tf-learn" 
-								<?= isset($_GET['pjID']) && $_GET['pjID'] =="tf-learn" ? "selected" : "" ?>
-								>tf-learn</option>
+								<?= isset($_GET['pjID']) && $_GET['pjID'] =="pj-2" ? "selected" : "" ?>
+								>pj-2</option>
 							</select>
 						</div>
 						<div class="input-group mb-2 mr-sm-2" >
